@@ -1,46 +1,48 @@
 html {
-			background:url(../images/background2.png) no-repeat top center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		.headerTitle {
-			font-family:Giddyup Std;
-			font-size:42px;
-			font-weight:bold;
-			padding-left:30%;
-		}
-		div.menuDiv {
-			text-align:center;
-			padding-left:20%;
-			white-space:nowrap;
-		}
-		div.buttonDiv {
-			padding-right:30px;
-			float:left;			
-		}
-		.menuButton {
-			border:2px solid #0081EC;
-			border-radius:25px;
-			-moz-border-radius:25px;
-			padding:5px;
-			background-color:#D7E3F1;
-			color:#0089EF;
-			font-weight:bold;
-			font-family:Comic Sans MS;
-			font-size:12pt;
-			cursor:pointer;
-		}
-		div.contentDiv {
-			clear:both;
-			padding-left:20%;
-			padding-top:30px;
-			width:500px;
-		}
-		span.contentText {
-			font-family:Comic Sans MS;
-			/*color:#153E7E;		*/
-			color:white;
-		}
-		
+	background:url(../images/pageBackground.png) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.headerTitle {
+	font-family:Giddyup Std;
+	font-size:42px;
+	font-weight:bold;
+	padding-left:30%;
+}
+div.menuDiv {
+	text-align:center;
+	padding-left:20%;
+	white-space:nowrap;
+}
+div.buttonDiv {
+	padding-right:30px;
+	float:left;			
+}
+.menuButton {
+	border:2px solid #0081EC;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	padding:5px;
+	background-color:#D7E3F1;
+	color:#0089EF;
+	font-weight:bold;
+	font-family:Comic Sans MS;
+	font-size:12pt;
+	cursor:pointer;
+}
+div.contentDiv {
+	clear:both;
+	padding-left:20%;
+	padding-top:30px;
+	width:500px;
+}
+span.contentText {
+	font-family:Comic Sans MS;
+	/*color:#153E7E;		*/
+	color:white;
+}
+a.link {
+	
+}
