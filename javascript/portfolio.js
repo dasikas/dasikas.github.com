@@ -1,4 +1,5 @@
 function onClickHome() {		
+	changeButtonClass("#homeButton");
 	$("#homeId").show();
 	$("#aboutId").hide();
 	$("#skillSetsId").hide();
@@ -7,6 +8,7 @@ function onClickHome() {
 }
 
 function onClickAbout() {		
+	changeButtonClass("#aboutButton");
 	$("#homeId").hide();
 	$("#aboutId").show();
 	$("#skillSetsId").hide();
@@ -14,7 +16,8 @@ function onClickAbout() {
 	$("#usefulLinksId").hide();			
 }
 
-function onClickSkillSets() {		
+function onClickSkillSets() {	
+	changeButtonClass("#skillSetsButton");
 	$("#homeId").hide();
 	$("#aboutId").hide();
 	$("#skillSetsId").show();
@@ -23,6 +26,7 @@ function onClickSkillSets() {
 }
 
 function onClickDesignSamples() {		
+	changeButtonClass("#designSamplesButton");
 	$("#homeId").hide();
 	$("#aboutId").hide();
 	$("#skillSetsId").hide();
@@ -31,9 +35,44 @@ function onClickDesignSamples() {
 }
 
 function onClickUsefulLinks() {		
+	changeButtonClass("#usefulLinksButton");
 	$("#homeId").hide();
 	$("#aboutId").hide();
 	$("#skillSetsId").hide();
 	$("#designSamplesId").hide();
 	$("#usefulLinksId").show();			
+}
+function changeButtonClass(id) {
+	$(id).removeClass("menuButton").addClass("menuButtonOnHover");
+	if(id == "#homeButton") {
+		$("#aboutButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#skillSetsButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#designSamplesButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#usefulLinksButton").removeClass("menuButtonOnHover").addClass("menuButton");
+	}
+	if(id == "#aboutButton") {
+		$("#homeButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#skillSetsButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#designSamplesButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#usefulLinksButton").removeClass("menuButtonOnHover").addClass("menuButton");
+	}
+	if(id == "#skillSetsButton") {
+		$("#homeButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#aboutButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#designSamplesButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#usefulLinksButton").removeClass("menuButtonOnHover").addClass("menuButton");
+	}
+	if(id == "#designSamplesButton") {
+		$("#homeButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#aboutButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#skillSetsButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#usefulLinksButton").removeClass("menuButtonOnHover").addClass("menuButton");
+	}
+	if(id == "#usefulLinksButton") {
+		$("#homeButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#aboutButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#skillSetsButton").removeClass("menuButtonOnHover").addClass("menuButton");
+		$("#designSamplesButton").removeClass("menuButtonOnHover").addClass("menuButton");
+	}
+	
 }

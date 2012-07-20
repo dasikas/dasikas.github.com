@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta HTTP-EQUIV="REFRESH" content="0; url=http://dasikas.github.com/portfolio.html">
-    <title>Dasikas.github.com by Sowjanya Dasika</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+	<title>Dasikas.github.com by Sowjanya Dasika</title>	
+	<link rel="stylesheet" href="stylesheets/portfolio.css"/> 
+	<link rel="stylesheet" href="stylesheets/style.css"/> 
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+	<script type="text/javascript" src="javascript/portfolio.js"></script>
+		<script>
+		$(document).ready(function() {		
+			$("#homeButton").click(onClickHome);
+			$("#aboutButton").click(onClickAbout);
+			$("#skillSetsButton").click(onClickSkillSets);
+			$("#designSamplesButton").click(onClickDesignSamples);
+			$("#usefulLinksButton").click(onClickUsefulLinks);		
+			$("#homeButton").blend();
+		});
+	</script>		
   </head>
-
   <body>
-    
-    
+	<div>	
+		<header>			
+			<h1 class="headerTitle">Portfolio of a Web Developer</h1>		
+		</header>
+	</div>
+	<table class="mainContentDiv">
+		<tr>
+		<td class="menuDiv">
+			<div class="buttonDiv"><button class="menuButtonOnHover" id="homeButton" type="button" >HOME</button></div>
+			<div class="buttonDiv"><button class="menuButton" id="aboutButton" type="button" >ABOUT</button></div>		
+			<div class="buttonDiv"><button class="menuButton" id="skillSetsButton" type="button">SKILL SETS</button></div>		
+			<div class="buttonDiv"><button class="menuButton" id="designSamplesButton" type="button">DESIGN SAMPLES</button></div>
+			<div class="buttonDiv"><button class="menuButton" id="usefulLinksButton" type="button">USEFUL LINKS</button></div>	
+		</td>	
+		<td class="contentDiv">
+			<div class="innerContentDiv">
+				<span id="homeId" class="contentText"> I am Sowjanya Dasika, a Minnesota based Web Developer/Graphic Designer with six years of experience designing and developing 
+					high quality websites. Looking forward to building more beautiful websites adhering to W3C standards.			
+				</span>
+				<span id="aboutId" class="contentText" style="display:none;"> Passionate about developing websites that not only look elegant, but also are efficient. 
+					Worked for the past six years in a software company developing websites for contact centers. Always keeping up with the current trend, with the 
+					enthusiasm to learn new technologies to improve the speed, usability, accessability and look and feel of websites. 
+					<div style="clear:both; padding-top:20px; font-weight:bold; font-size:14pt;"><span>Contact Me:</span></div>
+					<div style="clear:both; padding-top:10px;">
+						<a href="http://www.linkedin.com/pub/sowjanya-dasika/25/947/819" target="_blank">      
+							<img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Sowjanya Dasika's profile on LinkedIn">
+						</a>
+					</div>
+				</span>
+				<span id="skillSetsId" class="contentText" style="display:none;">
+					<ul>
+						<li>JavaScript, HTML, HTML5, CSS, CSS3, DOJO, JQuery, XML</li>
+						<li>Java, JSP, JSF</li>
+						<li>IDEs used - Netbeans, Eclipse</li>
+						<li>Application Servers used - Jetty, Apache Server, Apache Tomcat</li>
+						<li>Browsers used - IE7, IE8, Firefox, Chrome</li>
+						<li>Graphic Design tools - Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver</li>
+					</ul>
+				</span>
+				<span id="designSamplesId" class="contentText" style="display:none;">
+					Photoshop Samples
+					<div id="slider">
+						<div class="wrap">
+							<div id="slide-holder">
+								<div id="slide-runner">
+									<img id="slide-img-1" src="images/image1.png" class="slide" alt="Cruise" />
+									<img id="slide-img-2" src="images/image2.png" class="slide" alt="Rose" />
+									<img id="slide-img-3" src="images/image3.png" class="slide" alt="Birds in the sky" />
+									<img id="slide-img-4" src="images/image4.png" class="slide" alt="Question Logo" />
+									<img id="slide-img-5" src="images/image5.png" class="slide" alt="Q Logo" />
+									<div id="slide-controls">
+										<p id="slide-client" class="text"><strong>post: </strong><span></span></p>
+										<p id="slide-desc" class="text"><strong>desc: </strong></p>
+										<p id="slide-nav"></p>
+									</div>
+								</div>						
+							</div>
+							<script type="text/javascript">
+								if(!window.slider) var slider={};slider.data=[
+								{"id":"slide-img-1","client":"cruise","desc":"Photo retouched"},
+								{"id":"slide-img-2","client":"rose","desc":"Photo retouched"},
+								{"id":"slide-img-3","client":"birds in the sky","desc":"Photo retouched"},
+								{"id":"slide-img-4","client":"question logo","desc":"3D image created using Photoshop"},
+								{"id":"slide-img-5","client":"q logo","desc":"Logo created using Photoshop"}];
+						   </script>
+						</div>	
+					</div>	
+				</span>
+				<span id="usefulLinksId" class="contentText" style="display:none;">
+					<ul>
+						<li>Smashing Magazine: <a href="http://www.smashingmagazine.com/" target="_blank">http://www.smashingmagazine.com/</a></li>
+						<li>UX Magazine: <a href="http://uxmag.com/" target="_blank">http://uxmag.com/</a></li>
+						<li>Nice tutorials: <a href="http://thenewboston.org/tutorials.php" target="_blank">http://thenewboston.org/tutorials.php</a></li>
+						<li>Modernizr: <a href="http://webdesignernotebook.com/css/how-to-use-modernizr/" target="_blank">http://webdesignernotebook.com/css/how-to-use-modernizr/</a></li>
+						<li>HTML5 Boilerplate: <a href="http://html5boilerplate.com/" target="_blank">http://html5boilerplate.com/</a></li>
+						<li>LESS Framework: <a href="http://www.developerdrive.com/2012/04/learning-less-an-introduction/" target="_blank">http://www.developerdrive.com/2012/04/learning-less-an-introduction/</a></li>
+						<li>Media Queries: <a href="http://blog.rakeshpai.me/2010/10/practical-css3-media-queries-and-mobile.html" target="_blank">http://blog.rakeshpai.me/2010/10/practical-css3-media-queries-and-mobile.html</a></li>
+						<li>Top 10 SEO Techniques: <a href="http://freelancefolder.com/10-top-seo-techniques/" target="_blank">http://freelancefolder.com/10-top-seo-techniques/</a></li>
+					</ul>
+				</span>
+			</td>
+		</tr>
+	</table>
   </body>
 </html>
